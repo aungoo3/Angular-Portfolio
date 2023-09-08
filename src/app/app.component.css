@@ -29,7 +29,11 @@ h5{
     color: teal;
     font-size: 20px;
 }
-p{
-    padding-right: 6em;
-    padding-left: 6em;
+p {
+    padding-right: 5em;
+    padding-left: 5em;
+}
+/* Add the following: */
+app-skills {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
 }
