@@ -1,13 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Skill } from '../models/skill';
-import { Level } from '../types/level';
+import { Injectable } from '@angular/core';
+import { Skill } from '../../../shared/greeting/models/skill';
+import { Level } from '../../../shared/greeting/types/level';
+import { Observable, of } from 'rxjs';
 
-@Component({
-  selector: 'app-skills',
-  templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+@Injectable({
+  providedIn: 'root'
 })
-export class SkillsComponent implements OnInit{
+export class SkillsService {
   skills: Skill[] = [
     {
       id: 0,
@@ -51,10 +50,7 @@ export class SkillsComponent implements OnInit{
     },
   ];
 
-  constructor(){}
-
-  ngOnInit( ) {
-
-  }
-
+  getSkills = (): Observable<Skill[]> => {
+    return of(this.skills);
+  };
 }

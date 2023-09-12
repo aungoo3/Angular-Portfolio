@@ -9,5 +9,5 @@ export class AppComponent {
   title:string = 'Aung Oo';
   city : string = "Atlanta, Georgia, USA";
   tagline: string = "It is worth die doing it!";
-  aboutMe: string = "My name is Aung, I am from Atlanta, Georgia, USA. I have coding and software enginreering. Becoming a professional software engineer is my long term goal.";
+  aboutMe: string = "My name is Aung, I am from Atlanta, Georgia, USA. I love coding and software enginreering. Becoming a professional software engineer is my long term goal.";
 }
